@@ -25,6 +25,7 @@ public class MainClass {
 
 
         System.out.println(person.getName() + " включай мозги и ищи выход!");
+
         int ChosenObj = chooseAction();
         if (ChosenObj == 0) {
             person.getCurrentObject().lookAt();
@@ -33,6 +34,7 @@ public class MainClass {
         }
         ChosenObj = chooseAction();
     }
+
 
     public static int chooseAction() {
         RoomObject.RoomObjectType currRoomObj = person.getCurrentObject().getType();
@@ -52,8 +54,9 @@ public class MainClass {
         int action = sc.nextInt();
         return action;
     }
+
+
     public static void action() {
-
-
     }
 }
+
